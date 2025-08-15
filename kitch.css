@@ -1,0 +1,571 @@
+/*       *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100;
+    min-height:100vh;
+    background: #f8f8f8;
+}
+
+header{
+    height: 60px;
+    width: 100%;
+    background: #222121;
+    color: #fff;
+    display: flex;
+    align-items: centre;
+
+} 
+.container{
+    width:90% ;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+  .nav-list{
+            display:none;
+        }
+
+nav ul li{
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+    font-weight: 550;
+}
+
+.logo{
+    font-size: 24px;
+}
+
+.her{
+    width: 100%;
+    height: 400px;
+    background: url(images/Download\ Table\ scene\ with\ a\ selection\ of\ delicious\ foods_\ Top\ view\ over\ a\ dark\ wood\ banner\ background\,\ generate\ ai\ for\ free.jpeg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    color:#fff;
+    text-align: center;
+    padding: 140px 0;
+    margin-bottom: 20px;
+    font-size:x-large;
+ }
+
+.abt h1{
+    background-color: #222121;
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: xx-large;
+}
+
+.abt h3{
+    background-color: #222121;
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: x-large;
+}
+.cnt1{
+    background-color: #222121;
+    color: #fff;
+    padding-bottom: 70px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2cm;
+}
+
+.cntbt{
+    background-color: #222121;
+    color: #fff;
+    padding-bottom: 15px;
+   margin-right: 900px;
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 0.5cm;
+    column-gap: 40px;
+}
+
+
+.hero{
+    width: 100%;
+    height: 400px;
+    background: url(images/download.jpg);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    color:#fff;
+    text-align: center;
+    padding: 140px 0;
+    margin-bottom: 20px;
+ }
+
+ .hero h2{
+    font-size: 36px;
+    margin-bottom: 10px;
+ }
+
+ .hero p{
+   font-size: 20px;
+    margin-bottom: 10px; 
+ }
+
+ .search-box{
+    max-width: 500px;
+    margin: 15px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: red;
+    border-radius: 4px 0 0 4px  ;
+ }
+
+ .search-box input{
+    width: 90%;
+    padding: 10px;
+    outline: none;
+    border: 0;
+    border-radius: 4px 0 0 4px ;
+    font-size: 1rem;
+    border: 1px solid rgb(245, 245, 245)
+ }
+
+ .search-box button{
+
+    padding: 10px;
+    outline: none;
+    border: 0;
+    border-radius: 0 5px 5px 0;
+    font-size: 1rem;
+    background: rgb(245, 37, 9);
+    color: #fff;
+    cursor: pointer;
+ }
+
+ /* .................recipe section..........................*/
+/*      .recipies{
+    padding: 50px 0;
+ }
+ 
+ 
+ .recipies h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+ }
+
+ .recipie-section{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grip-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    column-gap: 10px;
+ }
+
+ .recipie-card{
+    background: #fff;
+    margin: 30px 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+ }
+
+ .recipie-card img{
+    width: 70%;
+    height: 400px; 
+    object-fit: cover;
+   
+ }
+
+ .recipie-card h2{
+    font-size: 22px;
+    padding: 20px;
+ }
+
+ .recipie-card a{
+    display: block;
+    text-align: center;
+    text-decoration: overline;
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+    cursor: pointer;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+ }
+
+ footer{
+    background: #333;
+    padding: 200px 0;
+    color: #fff;
+    text-align:center;
+    margin-bottom: 10px;
+ }
+
+.menu-icon{
+    font-size: 24px;
+    padding: 20px;
+    text-align: right;
+    cursor: pointer;
+    display: block;
+
+}
+
+/*...............Media query................*/
+/*       @media only screen and (min-width: 768px){
+        .menu-icon{
+            display: none;
+        }
+        .nav-list{
+            display:block;
+        }
+ }
+
+  @media only screen and (max-width: 768px){
+     .hero h2{
+        font-size: 28px;
+     }
+     .hero p{
+          font-size: 15px;
+     }
+ }
+
+ .mtr  h1{
+    background: #333;
+    font-size: xx-large;
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 20px;
+    padding-top: 20px;
+ }
+
+ .mtr h2{
+    background: #222121;
+    font-size: large;
+    text-align: center;
+     padding-bottom: 20px;
+    padding-top: 20px;
+    color: aliceblue;
+    font-family: cursive;
+ }
+ .instructions{
+   background-color:cornflowerblue;
+     padding-bottom: 20px;
+    font-size: large;
+ }
+
+ .ingridient{
+   background-color: antiquewhite;
+     padding-bottom: 10px;
+     padding-top: 10px;
+   font-size: large;
+ }
+
+ .extra{
+   background-color: deepskyblue;
+ }*/
+
+
+/*
+ * General Styles & Reset
+ */
+
+body {
+    width: 100%; /* Changed from '100' to '100%' for correct sizing */
+    min-height: 100vh;
+    background: #f8f8f8;
+    line-height: 1.6; /* Added line-height for better text readability */
+    }
+
+/*
+ * Header & Navigation
+ */
+header {
+    height: 60px;
+    width: 100%;
+    background: #222121;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px; /* Added max-width for better control on large screens */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+/* Base navigation styles */
+.nav-list {
+    display: none; /* Mobile-first approach: hide on small screens */
+}
+
+nav ul li {
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+    font-weight: 550;
+}
+
+nav ul li a {
+    text-decoration: none; /* Added to remove default underline on links */
+    color: #fff;
+    transition: color 0.3s ease; /* Added transition for hover effect */
+}
+
+nav ul li a:hover {
+    color: #ff5733; /* A vibrant color for a hover effect */
+}
+
+.menu-icon {
+    font-size: 24px;
+    padding: 20px;
+    cursor: pointer;
+    display: block; /* Show on small screens */
+}
+
+/*
+ * Hero Section
+ */
+.her {
+    width: 100%;
+    height: 400px;
+    background: url(images/Download\ Table\ scene\ with\ a\ selection\ of\ delicious\ foods_\ Top\ view\ over\ a\ dark\ wood\ banner\ background\,\ generate\ ai\ for\ free.jpeg) no-repeat center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 140px 0;
+    margin-bottom: 20px;
+    font-size: x-large;
+}
+
+.hero {
+    width: 100%;
+    height: 400px;
+    background: url(images/download.jpg) no-repeat center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 140px 0;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/*
+ * Search Box
+ */
+.search-box {
+    max-width: 500px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+    background: transparent; /* Changed to transparent, let the button handle color */
+    border-radius: 4px;
+    overflow: hidden; /* Ensures child elements stay within the border-radius */
+    border: 1px solid rgb(245, 245, 245); /* Changed from inner border to outer */
+}
+
+.search-box input {
+    width: 100%; /* Changed to 100% to fill the flex container */
+    padding: 10px;
+    outline: none;
+    border: none; /* Removed inner border */
+    font-size: 1rem;
+}
+
+.search-box button {
+    padding: 10px 20px; /* Added more horizontal padding */
+    outline: none;
+    border: none;
+    background: rgb(245, 37, 9);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0; /* Applied border-radius here */
+}
+
+/*
+ * Recipe Sections
+ */
+.recipies {
+    padding: 50px 0;
+}
+
+.recipies h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.recipie-section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Corrected property name and improved value */
+    gap: 20px; /* Changed from column-gap to gap for both rows and columns */
+}
+
+.recipie-card {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly improved box-shadow */
+}
+
+.recipie-card img {
+    width: 100%; /* Changed to 100% to fill the card */
+    height: 250px; /* Changed to a fixed height for consistency */
+    object-fit: cover;
+}
+
+.recipie-card h2 {
+    font-size: 22px;
+    padding: 20px;
+}
+
+.recipie-card a {
+    display: block;
+    text-align: center;
+    text-decoration: none; /* Changed from overline to none */
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.recipie-card a:hover {
+    background: #ff5733;
+}
+
+/*
+ * Specific Recipe Page (Matar Paneer)
+ */
+.mtr h1, .mtr h2 {
+    background: #222121;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif; /* Changed from cursive for a cleaner look */
+    font-style: italic; /* Added for the h1 */
+}
+
+.mtr h1 {
+    font-size: 2.5rem;
+}
+
+.mtr h2 {
+    font-size: 1.5rem;
+}
+
+.instructions, .ingridient, .extra {
+    padding: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 15px; /* Added spacing between sections */
+}
+
+.instructions {
+    background-color: cornflowerblue;
+    color: #fff; /* Added to ensure text is visible */
+}
+
+.ingridient {
+    background-color: antiquewhite;
+}
+
+.extra {
+    background-color: deepskyblue;
+    color: #fff; /* Added to ensure text is visible */
+}
+
+/*
+ * Footer
+ */
+footer {
+    background: #333;
+    padding: 50px 0; /* Reduced padding for a more standard footer size */
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*
+ * Other Sections
+ */
+.abt h1, .abt h3, .cnt1 {
+    background-color: #222121;
+    color: #fff;
+    margin-bottom: 30px;
+    padding: 20px; /* Added padding for better spacing */
+    text-align: center;
+}
+
+.abt h1 {
+    font-size: 2.5rem; /* Using rem for better scaling */
+}
+
+.abt h3 {
+    font-size: 1.8rem;
+}
+
+.cnt1 {
+    font-size: 1.5rem;
+}
+
+.cntbt {
+    background-color: #222121;
+    color: #fff;
+    padding: 15px;
+    margin: 0 auto 50px auto; /* Centered and simplified margin */
+    width: fit-content; /* Adjust width to content */
+    text-align: center;
+    font-size: 0.5cm; /* cm is not a standard unit for web, consider rem or px */
+}
+
+
+/*
+ * Media Queries
+ */
+@media only screen and (min-width: 768px) {
+    .menu-icon {
+        display: none;
+    }
+    .nav-list {
+        display: block; /* Show the nav-list on larger screens */
+    }
+    nav ul {
+        display: flex; /* Ensures links are side-by-side */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero h2 {
+        font-size: 28px;
+    }
+    .hero p {
+        font-size: 15px;
+    }
+    .nav-list {
+        display: none; /* Ensure nav is hidden on small screens */
+    }
+}
